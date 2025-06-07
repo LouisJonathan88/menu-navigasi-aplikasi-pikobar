@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_pesan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tv_pesan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="35dp"
+            android:text="Pesan"
+            android:textSize="24sp"
+            android:textColor="#424242"
+            android:letterSpacing="0"
+            android:lineHeight="20sp"
+            android:fontFamily="@font/lato_black" />
+
+
+        <!-- PESAN 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_pesan_merah"
+                android:contentDescription="Icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv_pesan_judul1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ini Ketentuan Takbiran dan Shalat Idul Fitri Kala Pandemi COVID-19"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#424242"
+                    android:lineHeight="20sp"
+                    android:letterSpacing="0"
+                    android:fontFamily="@font/roboto_bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_pesan_tanggal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari ini"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:letterSpacing="0" />
+
+
+                <TextView
+                    android:id="@+id/tv_pesan_isi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berikut terlampir infografis panduan pelaksanaan Takbir dan Shalat Idul Fitri 1441 H. Diolah dengan sumber dari Fatwa MUI No. 28 Tahun 2020 tentang Panduan Kaifiat"
+                    android:textSize="14sp"
+                    android:textColor="#424242"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <!-- PESAN 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_pesan_merah"
+                android:contentDescription="Icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pagelaran Wayang Golek dengan dalang Dadan Sunandar S. - Putra Giri Harja"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#424242"
+                    android:lineHeight="20sp"
+                    android:letterSpacing="0"
+                    android:fontFamily="@font/roboto_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari ini"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:letterSpacing="0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bingung menghabiskan waktu #dirumahaja? Pemprov Jabar mengundang warga Jabar untuk bisa menikmati hiburan kesenian Pagelaran Wayang Golek oleh Ki Dadan"
+                    android:textSize="14sp"
+                    android:textColor="#424242"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <!-- PESAN 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_pesan2"
+                android:contentDescription="Icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚀 Update Aplikasi PIKOBAR"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="#424242"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kemarin"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telah tersedia versi terbaru aplikasi PIKOBAR. Segera unduh versi terbaru melalui Play Store."
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <!-- PESAN 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_pesan2"
+                android:contentDescription="Icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ikuti Survei Bantuan Sosial Provinsi Jawa Barat"
+                    android:textSize="15sp"
+                    android:textColor="#424242"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0"
+                    android:lineSpacingExtra="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17 Nov 2020"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:letterSpacing="0" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telah tersedia versi terbaru aplikasi PIKOBAR. Segera unduh versi terbaru melalui Play Store."
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMarkAllRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tandai Semua Dibaca"
+            android:textStyle="bold"
+            android:textColor="@color/green_btn"
+            android:backgroundTint="@color/light_green"
+            app:cornerRadius="100dp"
+            app:strokeColor="@color/green_btn"
+            app:strokeWidth="1dp"
+            android:layout_gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp" />
+
+    </LinearLayout>
+</ScrollView>

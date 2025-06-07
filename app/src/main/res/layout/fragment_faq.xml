@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingTop="50dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:scrollbars="none"
+    android:elevation="1dp">
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frequently Asked Question"
+        android:fontFamily="@font/lato_black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#424242"
+        android:lineSpacingExtra="0dp"
+        android:letterSpacing="0"
+        android:paddingBottom="12dp" />
+
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Cari pertanyaan"
+        android:backgroundTint="#DDDDDD"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp"
+        android:drawableStart="@drawable/cari"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:elevation="1dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Tabs -->
+    <LinearLayout
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnInfoCovid"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Info Covid-19"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#16A75C"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btnVaksin"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Vaksinasi Covid-19"
+            android:textSize="8sp"
+            android:textColor="#757575"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btnPsbb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="PSBB"
+            android:textSize="9sp"
+            android:textColor="#757575"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+    </LinearLayout>
+
+    <!-- FAQ RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/faqRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+</LinearLayout>

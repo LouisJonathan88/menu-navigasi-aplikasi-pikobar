@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#16A75C</color> <!-- Hijau -->
+    <color name="gray">#BDBDBD</color> <!-- Abu-abu -->
+    <color name="dot_active">#4CAF50</color> <!-- hijau -->
+    <color name="dot_inactive">#C0C0C0</color> <!-- abu-abu -->
+    <color name="green_btn">#1AAD5B</color>
+    <color name="light_green">#E6F6EC</color> <!-- Latar hijau muda -->
+    <color name="teal_200">#03DAC5</color>
+
+</resources>
+

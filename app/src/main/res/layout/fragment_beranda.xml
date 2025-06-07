@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootBeranda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Tab Buttons -->
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:padding="8dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Tombol Jabar Hari Ini -->
+        <Button
+            android:id="@+id/btnJabarHariIni"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:text="Jabar Hari Ini"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_bold"
+            android:lineHeight="12sp"
+            android:letterSpacing="0"
+            android:backgroundTint="@color/green" />
+
+        <!-- Tombol Informasi COVID-19 dengan Notif -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp">
+
+            <Button
+                android:id="@+id/btnCovidInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Informasi COVID-19"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_bold"
+                android:lineHeight="12sp"
+                android:letterSpacing="0"
+                android:textAllCaps="false"
+                android:backgroundTint="#FFFFFF" />
+
+            <!-- Notif Bulat Merah -->
+            <View
+                android:id="@+id/notifCovid"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/red_circle"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Fragment container -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

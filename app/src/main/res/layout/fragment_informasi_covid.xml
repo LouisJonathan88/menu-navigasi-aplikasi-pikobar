@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    android:scrollbars="none"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Search Input -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Cari informasi di sini"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/bg_input"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section: Info Praktikal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:text="Info Praktikal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#424242"
+                android:fontFamily="@font/lato_black"
+                android:letterSpacing="0"
+                android:lineHeight="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:text="Lihat Semua"
+                android:textColor="#16A75C"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:letterSpacing="0"
+                android:lineHeight="12sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInfoPraktikal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            android:orientation="horizontal" />
+
+        <!-- Section: Berita -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:text="Berita"
+                android:textSize="16sp"
+                android:textColor="#424242"
+                android:fontFamily="@font/lato_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lineHeight="16sp"
+                android:letterSpacing="0" />
+
+            <TextView
+                android:text="Lihat Semua"
+                android:textColor="#16A75C"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textAlignment="viewEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="12sp"
+                android:letterSpacing="0" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBerita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+        <!-- Section: Video -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:text="Video"
+                android:textSize="16sp"
+                android:textColor="#424242"
+                android:fontFamily="@font/lato_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lineHeight="16sp"
+                android:letterSpacing="0" />
+
+            <TextView
+                android:text="Lihat Semua"
+                android:textColor="#16A75C"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textAlignment="viewEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="12sp"
+                android:letterSpacing="0" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+        <!-- Section: Dokumen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:text="Dokumen"
+                android:textSize="16sp"
+                android:textColor="#424242"
+                android:fontFamily="@font/lato_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Lihat Semua"
+                android:textColor="#16A75C"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="viewEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDokumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+        <!-- Footer -->
+        <TextView
+            android:text="Terima kasih sudah membaca"
+            android:textSize="12sp"
+            android:layout_marginTop="24dp"
+            android:textColor="#757575"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_bold"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Follow juga sosmed kami"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="18sp"
+            android:fontFamily="@font/roboto_regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_instagram" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_twitter" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_facebook" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
